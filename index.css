@@ -1,22 +1,50 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
-.bgimage{
-    
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+header nav {
+    margin-top: 20px;
 }
 
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 ;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #0a0101;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: #F4CE14;
+    color: #0a0101;
+}
 body {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.555), rgba(100, 0, 0, 0.507), rgba(150, 150, 0, 0.541)), url("saso\ logo\ .png");
+    background-size: contain;
+    background-position: center;
+    margin: auto;
+    /* display: flex;
+    justify-content: center; */
+    align-items: center;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #0e0e0d67;
+    background-color: #0e0e0d21;
     text-align: center;
+    color: white;
 }
-
 .container {
     width: 90%;
     max-width: 1200px;
@@ -62,7 +90,7 @@ h2 {
     color: aliceblue;
 }
 
-.card img {
+.card > img {
     max-width: 100%;
     height: auto;
     margin-bottom: 15px;
