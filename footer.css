@@ -1,7 +1,10 @@
 footer {
-    background: #333;
-    color: #fff;
+    background: #333; /* Dark background for footer */
+    color: #ffffff; /* Light font color for footer text */
     padding: 20px 0;
+}
+
+footer .container {
     text-align: center;
 }
 
@@ -9,24 +12,51 @@ footer p {
     margin-bottom: 10px;
 }
 
-.social-links {
+footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+footer .social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .social-links a {
+    color: #ffffff; /* Light color for social icons */
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #F4CE14; /* Color change on hover */
+}
+
+footer .footer-nav {
+    margin-top: 20px;
+}
+
+footer .footer-nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-.social-links li {
-    margin: 0 10px;
+footer .footer-nav ul li {
+    margin: 0 15px;
 }
 
-.social-links a {
-    color: #fff;
+footer .footer-nav ul li a {
     text-decoration: none;
-    font-size: 1.5em;
+    color: #ffffff; /* Light color for footer navigation links */
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-.social-links a:hover {
-    color: #ccc;
+footer .footer-nav ul li a:hover {
+    color: #F4CE14; /* Color change on hover */
 }
- 
+Explanation
