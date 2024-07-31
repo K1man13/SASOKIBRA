@@ -33,7 +33,7 @@ header nav ul li a:hover {
     color: #0a0101;
 }
 body {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.555), rgba(100, 0, 0, 0.507), rgba(150, 150, 0, 0.541)), url("saso\ logo\ .png");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.555), rgba(100, 0, 0, 0.507), rgba(155, 155, 12, 0.76)), url("saso\ logo\ .png");
     background-size: contain;
     background-position: center;
     margin: auto;
@@ -43,7 +43,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #0e0e0d21;
     text-align: center;
-    color: white;
+    color: whitesmoke;
 }
 .container {
     width: 90%;
@@ -134,5 +134,45 @@ li {
 
     .card {
         margin: 10px 0;
+    }
+}
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    footer .footer-nav ul {
+        flex-direction: column;
+    }
+
+    footer .footer-nav ul li {
+        margin: 10px 0;
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em; /* Adjust header size */
+    }
+
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px 0;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1 1 100%; /* Make cards stack vertically on small screens */
     }
 }
