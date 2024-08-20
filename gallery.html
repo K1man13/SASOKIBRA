@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Spread A Smile Organization</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <title>Gallery</title>
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust min-width as needed */
+            gap: 4cm; /* Space between images set to 2 cm */
+            justify-content: center; /* Center the grid items */
+            align-items: start; /* Align items to the top to avoid vertical overlap */
+        }
+
+        .gallery-grid img {
+            width: 120%; /* Make the image fill the grid cell */
+            height: auto; /* Maintain the aspect ratio */
+            object-fit: cover; /* Ensure the image covers the area without distortion */
+            border-radius: 8px; /* Optional: rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Header content here -->
+    </header>
+    
+    <section id="gallery">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <h3>Welcome to our photo gallery. Scroll through our highlights below.</h3>
+            <br>
+            <div class="swiper-container">
+                <div class="gallery-grid">
+                    <div class="swiper-slide"><img src="photos/20240211_174815.jpg" alt= "photo 1"></div>
+                    <div class="swiper-slide"><img src="photos/20240322_153340.jpg" alt= "photo 2"></div>
+                    <div class="swiper-slide"><img src="photos/DSC_0166.jpg" alt="photo 3"></div>
+                    <div class="swiper-slide"><img src="photos/DSC_0355.jpg" alt="photo 4"></div>
+                    <div class="swiper-slide"><img src="photos/Photo_1703146937874.jpg" alt="photo 5"></div>
+                    <div class="swiper-slide"><img src="photos/IMG-20221130-WA0021.jpg" alt="photo 6"></div>
+                    <div class="swiper-slide"><img src="photos/IMG-20221130-WA0009.jpg" alt="photo 7"></div>
+                    <div class="swiper-slide"><img src="photos/liz.jpg" alt="photo 8"></div>
+                    <div class="swiper-slide"><img src="photos/Photo_1703149351467 (1)(2).jpg" alt="photo 9"></div>
+                    <div class="swiper-slide"><img src="photos/20240322_155123.jpg" alt="photo 10"></div>
+                    <div class="swiper-slide"><img src="photos/DSC_0404.jpg" alt="photo 11"></div>
+                    <div class="swiper-slide"><img src="photos/Photo_1698173964571.jpg" alt="photo 12"></div>
+                    <div class="swiper-slide"><img src="photos/Photo_1703150667032(2).jpg" alt="photo 13"></div>
+                    <div class="swiper-slide"><img src="photos/Photo_1703150664948.jpg" alt="photo 14"></div>
+                    <div class="swiper-slide"><img src="photos/Photo_1703148621458(1).jpg" alt="photo 15"></div>
+                    <div class="swiper-slide"><img src="photos/Photo_1703151317900(2).jpg" alt="photo 16"></div>
+                    <!-- Add more photos here -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>

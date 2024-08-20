@@ -55,3 +55,32 @@ document.addEventListener("DOMContentLoaded", function() {
         img.loading = "lazy";
     });
 });
+// Get the modal
+var modal = document.getElementById("gallery-modal");
+
+// Get the image and insert it inside the modal
+var modalImg = document.getElementById("modal-image");
+
+// Get all the images and attach click event listeners
+var images = document.querySelectorAll('.gallery-item');
+images.forEach(image => {
+    image.addEventListener('click', function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    });
+});
+
+// Get the <span> element that closes the modal
+var span = document.querySelector('.close');
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Close modal on click outside the image
+modal.onclick = function(event) {
+    if (event.target !== modalImg) {
+        modal.style.display = "none";
+    }
+}
