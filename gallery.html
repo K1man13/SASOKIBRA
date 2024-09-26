@@ -6,68 +6,155 @@
     <title>Gallery - Spread A Smile Organization</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="icon" href="saso logo .png" type="image/png">
+    <script src="script.js"></script>
 
-    <title>Gallery</title>
+    <link rel="icon" href="saso logo .png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
     <style>
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust min-width as needed */
-            gap: 4cm; /* Space between images set to 2 cm */
-            justify-content: center; /* Center the grid items */
-            align-items: start; /* Align items to the top to avoid vertical overlap */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
         }
 
-        .gallery-grid img {
-            width: 120%; /* Make the image fill the grid cell */
-            height: auto; /* Maintain the aspect ratio */
-            object-fit: cover; /* Ensure the image covers the area without distortion */
-            border-radius: 8px; /* Optional: rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+        header {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: whitesmoke;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <!-- Header content here -->
+        <h2>Our Gallery</h2>
+        <h3>Explore the moments captured during our charity work, mentorship programs, and community initiatives.</h3>
     </header>
     
     <section id="gallery">
         <div class="container">
-            <h2>Our Gallery</h2>
-            <h3>Welcome to our photo gallery. Scroll through our highlights below.</h3>
-            <br>
             <div class="swiper-container">
                 <div class="gallery-grid">
-                    <div class="swiper-slide"><img src="photos/20240211_174815.jpg" alt= "photo 1"></div>
-                    <div class="swiper-slide"><img src="photos/20240322_153340.jpg" alt= "photo 2"></div>
-                    <div class="swiper-slide"><img src="photos/DSC_0166.jpg" alt="photo 3"></div>
-                    <div class="swiper-slide"><img src="photos/DSC_0355.jpg" alt="photo 4"></div>
-                    <div class="swiper-slide"><img src="photos/Photo_1703146937874.jpg" alt="photo 5"></div>
-                    <div class="swiper-slide"><img src="photos/IMG-20221130-WA0021.jpg" alt="photo 6"></div>
-                    <div class="swiper-slide"><img src="photos/IMG-20221130-WA0009.jpg" alt="photo 7"></div>
-                    <div class="swiper-slide"><img src="photos/liz.jpg" alt="photo 8"></div>
-                    <div class="swiper-slide"><img src="photos/Photo_1703149351467 (1)(2).jpg" alt="photo 9"></div>
-                    <div class="swiper-slide"><img src="photos/20240322_155123.jpg" alt="photo 10"></div>
-                    <div class="swiper-slide"><img src="photos/DSC_0404.jpg" alt="photo 11"></div>
-                    <div class="swiper-slide"><img src="photos/Photo_1698173964571.jpg" alt="photo 12"></div>
-                    <div class="swiper-slide"><img src="photos/Photo_1703150667032(2).jpg" alt="photo 13"></div>
-                    <div class="swiper-slide"><img src="photos/Photo_1703150664948.jpg" alt="photo 14"></div>
-                    <div class="swiper-slide"><img src="photos/Photo_1703148621458(1).jpg" alt="photo 15"></div>
-                    <div class="swiper-slide"><img src="photos/Photo_1703151317900(2).jpg" alt="photo 16"></div>
-                    <!-- Add more photos here -->
+                    <!-- Photos with event captions -->
+                    <div class="swiper-slide">
+                        <img src="photos/20240211_174815.jpg" alt="Photo 1">
+                        <p class="event-caption">Leadership Workshop Michuki Memorial Park - February 2024</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/20240322_153340.jpg" alt="Photo 2">
+                        <p class="event-caption">Joash Oloum Mentorship Session - March 2024</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/DSC_0166.jpg" alt="Photo 3">
+                        <p class="event-caption">Mercy Paula Children's Home Charity Event - April 2023</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/DSC_0355.jpg" alt="Photo 4">
+                        <p class="event-caption">Mercy Paula Charity - April 2024</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/Photo_1703146937874.jpg" alt="Photo 5">
+                        <p class="event-caption">Annual Watoto Festival - December 2023</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/Photo_1722885102824.jpg" alt="Photo 6">
+                        <p class="event-caption">Amaizing Wonders Rescue Centre - August 2024</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/Photo_1722882620142.jpg" alt="Photo 7">
+                        <p class="event-caption">Amaizing Wonders Rescue Centre - August 2024</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/Photo_1722887719688.jpg" alt="Photo 9">
+                        <p class="event-caption">Amaizing Wonders Team-Building - August 2023</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/20240322_155123.jpg" alt="Photo 10">
+                        <p class="event-caption">Joash Oloum Team-Biulding - March 2024</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/DSC_0404.jpg" alt="Photo 11">
+                        <p class="event-caption">Support for Small Businesses - June 2023</p>
+                    </div>
+                    <!-- Continue adding captions for the remaining photos -->
                 </div>
-                <!-- Add Pagination -->
+
+                <!-- Swiper Pagination -->
                 <div class="swiper-pagination"></div>
-                <!-- Add Navigation -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <!-- Swiper Navigation -->
+                
             </div>
         </div>
     </section>
 
+    <!-- Details about past events -->
+    <section class="event-details container">
+        <h4>Past Events & Highlights</h4>
+        <h4>Spread A Smile Organization has been involved in various community projects aimed at empowering and uplifting individuals from different walks of life. Our gallery showcases the success and impact of these events, including:</h4>
+
+        <p><strong><h3>Leadership Workshop (February 2024)</h3></strong><br> <li>This workshop was designed to equip young people with essential skills for leadership and personal development. The event was a great success, with around 7 of our own leaders attending.</p></li>
+
+        <p><strong><h3>Mentorship Session (March 2024)</h3></strong><br><li>In collaboration with local schools, we organized an adolescents mentorship session in marginalized areas to promote self-esteem, career guidance, and personal development. The event was aimed at empowering young minds by connecting them with mentors from various fields. Through interactive workshops, group discussions, and one-on-one sessions, participants learned about the importance of education, life skills, and setting goals for the future..</p></li>
+        
+        <p><strong><h3>Mercy Paula Charity Event (April 2023)</h3></strong><br><li>Our team and volunteers spent a heartwarming day cooking meals and sharing joy with children from marginalized communities. We organized fun activities, played games, and created a lively atmosphere filled with laughter and learning. Alongside the fun, we hosted a brief mentorship session where we discussed the importance of education, self-belief, and setting goals. The event not only provided a nutritious meal but also created lasting memories for the kids and helped them feel supported during a challenging time </p></li>
+
+        <p><strong><h3>Annual Watoto Festival (December 2023)</h3></strong><Last><br><li>Last year, we hosted the inaugural Watoto Festival, a joyful celebration dedicated to children from marginalized communities. The festival was filled with fun activities, games, performances, and interactive workshops, creating an unforgettable experience for the kids. This event also provided an opportunity for the children to express their talents and creativity while learning valuable life skills. Due to the incredible success and positive impact, we are excited to announce that the Watoto Festival will now be an annual tradition, continuing to bring joy, learning, and hope to these young minds.</p></li>
+
+        <!-- Add more details about past events as needed -->
+    </section>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="gallery.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+<footer>
+    <div class="container">
+        <p>Contact Us: spreadasmileorganization@gmail.com | Phone: 0775930319</p>
+        <ul class="social-links">
+            <li><a href="https://www.facebook.com/profile.php?id=100091657175558"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://x.com/saso_2024?t=nIVPFt3iX1_NcLcLPpPHLQ&s=09"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/spread_a_smile_organization?igsh=YzljYTk1ODg3Zg=="><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.tiktok.com/@spreadasmileorganization?_t=8oHmupeJWnV&_r=1"><i class="fab fa-tiktok"></i></a></li>
+            <li><a href="https://youtube.com/@spreadasmileorganization?si=MNuKFF3IQWk-pozY"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </div>
+</footer>
 </body>
+
 </html>

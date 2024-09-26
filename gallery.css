@@ -1,3 +1,7 @@
+h3 {
+    color: black;
+    font-family: Arial, sans-serif;
+}
 /* Carousel Styles */
 .swiper-container {
     width: 100%;
@@ -17,6 +21,24 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates three equal-width columns */
+    gap: 0.5cm; /* Adjust the space between images */
+    justify-content: center; /* Centers the grid items */
+    align-items: start; /* Aligns items at the top */
+}
+
+.gallery-grid img {
+    width: 100%; /* Ensures the image fills the grid cell */
+    height: auto; /* Maintains the image aspect ratio */
+    object-fit: cover; /* Makes sure the image covers the area without distortion */
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+    transition: transform 0.3s ease-in-out;
+}
+
+
 @media (max-width: 768px) {
     .gallery-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for smaller screens */
@@ -30,3 +52,51 @@
     }
 }
 
+/* General paragraph styles */
+p {
+    font-size: 1.1em; /* Slightly larger font for readability */
+    line-height: 1.6; /* Increase line height for better spacing */
+    color: whitesmoke; /* Softer gray color for text */
+    margin-bottom: 20px; /* Space below each paragraph */
+    text-align: justify; /* Justify the text for a cleaner look */
+}
+
+/* Event captions under images */
+.event-caption {
+    font-size: 1em; /* Standard font size */
+    color: white; /* Lighter gray for captions */
+    text-align: center; /* Center captions under images */
+    margin-top: 10px; /* Space between image and caption */
+    font-style: italic; /* Optional: italic style for captions */
+}
+
+/* Specific styles for the event details section */
+.event-details p {
+    font-size: 1.15em; /* Larger font for event descriptions */
+    color: whitesmoke; /* Darker color for better contrast */
+    line-height: 1.8; /* Increase line height for easy reading */
+    margin-bottom: 25px; /* Add more space between paragraphs */
+}
+
+.event-details h4 {
+    font-size: 1.5em; /* Larger size for section headers */
+    color: black; /* Darker heading color */
+    margin-bottom: 15px; /* Space below the heading */
+    border-bottom: 2px solid #eaeaea; /* Optional: underline heading */
+    padding-bottom: 5px; /* Space between heading text and underline */
+}
+
+/* Optional: Add a hover effect to images */
+.gallery-grid img:hover + .event-caption {
+    color: #eef112cc; /* Change caption color on hover */
+    font-weight: bold; /* Bold the caption on hover */
+    transform: scale(1.05); /* Smooth hover effect */
+}
+
+/* Add padding around paragraphs to make them easier to read */
+.container p {
+    padding: 0 20px; /* Adds padding to both sides of paragraphs */
+}
+.event-details h3{
+    color: black;
+}
