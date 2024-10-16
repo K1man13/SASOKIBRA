@@ -11,10 +11,12 @@ header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+    padding: 0; /* Remove default padding */
 }
 
 header nav ul li {
-    margin: 0 ;
+    margin: 0;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -32,6 +34,21 @@ header nav ul li a:hover {
     background: #F4CE14;
     color: #0a0101;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    header nav ul li a {
+        padding: 10px 20px; /* Adjust padding for better touch targets */
+        width: 100%; /* Make links full width */
+        text-align: center; /* Center text */
+    }
+}
+
 body {
     background-image: url("saso\ logo\ .png");
     background-size: contain;
